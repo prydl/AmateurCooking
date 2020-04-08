@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             counter--;
 
-            test.setText("Number of attempts remaining: " + counter);
+            test.setText("Number of attempts remaining: " + toString().valueOf(counter));
 
             if(counter == 0){
                  signinbutton.setEnabled(false);

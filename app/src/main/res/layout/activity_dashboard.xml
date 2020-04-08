@@ -92,7 +92,8 @@
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="15dp" />
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/level1"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -121,7 +122,8 @@
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="15dp" />
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/level2"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -162,7 +164,8 @@
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="15dp"/>
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/level3"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -191,7 +194,8 @@
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="15dp"/>
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/level4"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -231,7 +235,8 @@
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="15dp"/>
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/level5"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
