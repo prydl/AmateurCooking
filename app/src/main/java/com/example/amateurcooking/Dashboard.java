@@ -14,19 +14,19 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
     private CardView Level1, Level2, Level3, Level4, Level5, Notes;
 
 
-    @SuppressLint("WrongViewCast")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
         //setting views references for each card view object
-        Level1 = (CardView) findViewById(R.id.card1);
-        Level2 = (CardView) findViewById(R.id.card2);
-        Level3 = (CardView) findViewById(R.id.card3);
-        Level4 = (CardView) findViewById(R.id.card4);
-        Level5 = (CardView) findViewById(R.id.card5);
-        Notes = (CardView) findViewById(R.id.card6);
+        Level1 = findViewById(R.id.card1);
+        Level2 = findViewById(R.id.card2);
+        Level3 = findViewById(R.id.card3);
+        Level4 = findViewById(R.id.card4);
+        Level5 = findViewById(R.id.card5);
+        Notes = findViewById(R.id.card6);
 
         //adding onClickListeners
         Level1.setOnClickListener(this);
@@ -44,7 +44,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
         //switch statements to navigate each card to its own page
         switch (v.getId()) {
-            case R.id.card1: i = new Intent (this, level1.class); startActivity(i);
+            case R.id.card1_1: i = new Intent (this, level1.class); startActivity(i);
             break;
 
             case R.id.card2: i = new Intent (this, level2.class); startActivity(i);
