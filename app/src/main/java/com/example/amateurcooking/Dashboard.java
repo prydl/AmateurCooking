@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+//https://www.youtube.com/watch?v=d6CfaWW7G5Q&fbclid=IwAR3NunuXviohz-3G2MXht_MxAxhruwccKPAWF7PHETrAw64k-1cBCAsmW5s
+
 public class Dashboard extends AppCompatActivity implements View.OnClickListener {
     //declare the cards
     private CardView Level1, Level2, Level3, Level4, Level5, Notes;
@@ -44,7 +46,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
         //switch statements to navigate each card to its own page
         switch (v.getId()) {
-            case R.id.card1_1: i = new Intent (this, level1.class); startActivity(i);
+            case R.id.card1: i = new Intent (this, level1.class); startActivity(i);
             break;
 
             case R.id.card2: i = new Intent (this, level2.class); startActivity(i);
