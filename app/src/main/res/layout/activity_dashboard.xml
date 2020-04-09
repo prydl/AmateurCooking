@@ -74,6 +74,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
+                    android:id="@+id/card1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -93,7 +94,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        app:srcCompat="@drawable/level1"/>
+                        app:srcCompat="@drawable/level1" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -104,6 +105,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
+                    android:id="@+id/card2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -123,7 +125,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        app:srcCompat="@drawable/level2"/>
+                        app:srcCompat="@drawable/level2" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -146,6 +148,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
+                    android:id="@+id/card3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -165,7 +168,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        app:srcCompat="@drawable/level3"/>
+                        app:srcCompat="@drawable/level3" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -176,6 +179,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
+                    android:id="@+id/card4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -195,7 +199,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        app:srcCompat="@drawable/level4"/>
+                        app:srcCompat="@drawable/level4" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -217,6 +221,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
+                    android:id="@+id/card5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -236,7 +241,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        app:srcCompat="@drawable/level5"/>
+                        app:srcCompat="@drawable/level5" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -247,6 +252,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
+                    android:id="@+id/card6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -265,7 +271,8 @@
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="15dp" />
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/notes" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
