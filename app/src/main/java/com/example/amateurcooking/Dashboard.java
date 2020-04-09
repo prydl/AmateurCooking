@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 
 //https://www.youtube.com/watch?v=d6CfaWW7G5Q&fbclid=IwAR3NunuXviohz-3G2MXht_MxAxhruwccKPAWF7PHETrAw64k-1cBCAsmW5s
+//https://developer.android.com/reference/android/support/v7/widget/CardView#summary
 
 public class Dashboard extends AppCompatActivity implements View.OnClickListener {
     //declare the cards
