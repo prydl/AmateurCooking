@@ -18,22 +18,24 @@
             android:layout_height="48dp"
             android:layout_marginStart="162dp"
             android:layout_marginLeft="162dp"
-            android:layout_marginTop="77dp"
+            android:layout_marginTop="76dp"
             android:layout_marginEnd="163dp"
             android:layout_marginRight="163dp"
             android:fontFamily="@font/amatic_sc"
             android:text="Level 1 "
+            android:gravity="center"
             android:textColor="#000000"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="488dp"
-            android:layout_height="224dp"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
             android:layout_marginTop="72dp"
             android:orientation="horizontal"
             android:padding="10dp"
@@ -109,8 +111,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout2"
-            android:layout_width="485dp"
-            android:layout_height="214dp"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
             android:orientation="horizontal"
             android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
