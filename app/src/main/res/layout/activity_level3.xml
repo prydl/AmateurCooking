@@ -64,6 +64,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:text="Pepperoni Pizza"
+                        android:gravity="center"
                         android:textSize="24sp" />
 
                     <ImageView
