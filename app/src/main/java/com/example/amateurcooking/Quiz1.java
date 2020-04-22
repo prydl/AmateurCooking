@@ -1,9 +1,9 @@
 package com.example.amateurcooking;
 
-import androidx.appcompat.app.AppCompatActivity;
+
 
 //TO-DO: fill all questions for Quiz 1
-public class Quiz1 extends AppCompatActivity {
+public class Quiz1  {
 
     public String mQuestions[] = {
             "What is your name?",
@@ -17,9 +17,9 @@ public class Quiz1 extends AppCompatActivity {
             {"Bell", "Swell", "Smell", "Tell"}
     };
 
-    private String mAnswers[] = {"John", "20", "Bell"};
+    private String mAnswer[] = {"John", "20", "Bell"};
 
-    public String getQuestions (int a) {
+    public String getQuestion (int a) {
         String question = mQuestions[a];
         return question;
     }
@@ -49,7 +49,7 @@ public class Quiz1 extends AppCompatActivity {
     }
 
     public String getAnswer(int a) {
-        String answer = mAnswers[a];
+        String answer = mAnswer[a];
         return answer;
     }
 

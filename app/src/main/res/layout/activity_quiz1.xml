@@ -9,7 +9,7 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    tools:context="com.example.amateurcooking.QuestionsActivity1">
+    tools:context="com.example.amateurcooking.QuestionsModel">
 
 
 
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/quitButton" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/score"
         android:layout_width="17dp"
         android:layout_height="29dp"
         android:layout_marginStart="200dp"
