@@ -9,7 +9,7 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    tools:context="com.example.amateurcooking.QuestionsModel">
+    tools:context="com.example.amateurcooking.QuizModel">
 
 
 
