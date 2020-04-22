@@ -1,7 +1,6 @@
 package com.example.amateurcooking;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,7 +27,7 @@ public class level1 extends AppCompatActivity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, quiz1.class);
+        Intent intent = new Intent(this, QuestionsActivity1.class);
         this.startActivity ( intent );
 
 

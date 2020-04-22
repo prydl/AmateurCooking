@@ -9,7 +9,7 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    tools:context="com.example.amateurcooking.quiz1">
+    tools:context="com.example.amateurcooking.QuestionsActivity1">
 
 
     <!--android:layout-->
@@ -24,7 +24,6 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="295dp"
         android:checked="false"
-        android:text="A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +35,6 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="8dp"
         android:checked="false"
-        android:text="B"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButton" />
 
@@ -48,7 +46,6 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="8dp"
         android:checked="false"
-        android:text="C"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
 
@@ -60,7 +57,6 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="8dp"
         android:checked="false"
-        android:text="D"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
 
@@ -75,7 +71,7 @@
         android:text="Next Question"
         android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvque" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
 
     <Button
         android:id="@+id/buttonquit"
@@ -94,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/radioButton4" />
 
     <TextView
-        android:id="@+id/tvque"
+        android:id="@+id/tvQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
@@ -140,7 +136,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/logo"
         android:layout_width="132dp"
         android:layout_height="122dp"
         android:layout_marginStart="131dp"
@@ -166,6 +162,6 @@
         android:text="Test your knowledge..."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
