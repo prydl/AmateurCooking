@@ -14,10 +14,11 @@ import android.widget.TextView;
 public class QuestionsActivity1 extends AppCompatActivity {
 
     //initialise variables
-    private TextView question, qLeft;
+    private TextView question;
     //private RadioButton option1, option2, option3, option4;
     private LinearLayout optionsContainer;
     private Button quitButton, nextButton;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,34 +27,11 @@ public class QuestionsActivity1 extends AppCompatActivity {
 
         //find variables by ID
         question = findViewById(R.id.tvQuestion);
-        qLeft = findViewById(R.id.qLeft);
+        //qLeft = findViewById(R.id.qLeft);
         optionsContainer = findViewById(R.id.questionsContainer);
         quitButton = findViewById(R.id.quitButton);
         nextButton = findViewById(R.id.nextButton);
-    }
 
-    private void playAnimation(View view, int value) {
-        view.animate().alpha(value).scaleX(value).scaleY(value).setDuration(500).setStartDelay(100)
-                .setInterpolator(new DecelerateInterpolator()).setListener(new Animator.AnimatorListener() {
-            @Override
-            public void onAnimationStart(Animator animation) {
-
-            }
-
-            @Override
-            public void onAnimationEnd(Animator animation) {
-
-            }
-
-            @Override
-            public void onAnimationCancel(Animator animation) {
-
-            }
-
-            @Override
-            public void onAnimationRepeat(Animator animation) {
-
-            }
-        });
     }
 }
+
