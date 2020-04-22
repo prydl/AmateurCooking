@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
+    android:id="@+id/questionsContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
@@ -10,6 +10,7 @@
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context="com.example.amateurcooking.QuestionsActivity1">
+    tools:context="com.example.amateurcooking.QuestionsActivity2">
 
 
     <!--android:layout-->
@@ -17,7 +18,7 @@
 
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/optOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -28,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/optTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -36,10 +37,10 @@
         android:layout_marginTop="8dp"
         android:checked="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        app:layout_constraintTop_toBottomOf="@+id/optOne" />
 
     <RadioButton
-        android:id="@+id/radioButton3"
+        android:id="@+id/optThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -47,10 +48,10 @@
         android:layout_marginTop="8dp"
         android:checked="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/optTwo" />
 
     <RadioButton
-        android:id="@+id/radioButton4"
+        android:id="@+id/optFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -58,74 +59,60 @@
         android:layout_marginTop="8dp"
         android:checked="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+        app:layout_constraintTop_toBottomOf="@+id/optThree" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/nextButton"
         android:layout_width="170dp"
         android:layout_height="39dp"
-        android:layout_marginTop="259dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="388dp"
         android:background="#6AD36E"
         android:text="Next Question"
         android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+        app:layout_constraintStart_toEndOf="@+id/quitButton"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <Button
-        android:id="@+id/buttonquit"
+        android:id="@+id/quitButton"
         android:layout_width="170dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="57dp"
+        android:layout_marginTop="388dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:background="#F85F6A"
         android:text="Quit"
         android:textColor="#ffffff"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton4" />
-
-    <TextView
-        android:id="@+id/tvQuestion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
-        android:layout_marginLeft="155dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:text="Questions"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quizintro" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
         android:text="Your Score"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#000000"
         android:textSize="19dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonquit" />
+        app:layout_constraintTop_toBottomOf="@+id/quitButton" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="17dp"
         android:layout_height="29dp"
-        android:layout_marginStart="216dp"
-        android:layout_marginLeft="216dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="24dp"
         android:gravity="center_horizontal"
         android:text="0"
         android:textAlignment="center"
@@ -133,7 +120,7 @@
         android:textColor="#000000"
         android:textSize="19dp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/nextButton" />
 
     <ImageView
         android:id="@+id/logo"
@@ -141,26 +128,41 @@
         android:layout_height="122dp"
         android:layout_marginStart="131dp"
         android:layout_marginLeft="131dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="131dp"
         android:layout_marginRight="131dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/quizintro"
-        android:layout_width="107dp"
-        android:layout_height="52dp"
+        android:id="@+id/qLeft "
+        android:layout_width="85dp"
+        android:layout_height="18dp"
         android:layout_marginStart="172dp"
         android:layout_marginLeft="172dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="148dp"
         android:layout_marginRight="148dp"
         android:gravity="center"
-        android:text="Test your knowledge..."
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/questions"
+        android:layout_width="181dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
