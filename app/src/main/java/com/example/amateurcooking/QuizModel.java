@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -17,12 +17,12 @@ import java.util.Random;
 
 
 
-public class QuizModel extends AppCompatActivity {
+public class QuizModel extends AppCompatActivity implements View.OnClickListener {
 
         //initialise variables
     private TextView question, score;
     private Button option1, option2, option3, option4;
-    private Button quitButton, nextButton;
+    private Button quitButton;
 
 
     //calling questions
@@ -40,6 +40,7 @@ public class QuizModel extends AppCompatActivity {
 
         r = new Random();
 
+
         //find variables by ID
         question = findViewById(R.id.tvQuestion);
         option1 = findViewById(R.id.optOne);
@@ -48,7 +49,12 @@ public class QuizModel extends AppCompatActivity {
         option4 = findViewById(R.id.optFour);
         score = findViewById(R.id.score);
         quitButton = findViewById(R.id.quitButton);
-        nextButton = findViewById(R.id.nextButton);
+
+        quitButton.setOnClickListener(this);
+
+
+
+
 
         score.setText("Score: " + mScore);
 
@@ -154,6 +160,16 @@ public class QuizModel extends AppCompatActivity {
                             }
                         });
     }
+
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(this, level1.class);
+        this.startActivity ( intent );
+
+    }
+
+
 
 
 }

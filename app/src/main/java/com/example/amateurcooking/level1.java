@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class level1 extends AppCompatActivity implements OnClickListener {
     //declare the cards
     private Button quizButton;
+
+    private ImageButton backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,16 +22,25 @@ public class level1 extends AppCompatActivity implements OnClickListener {
 
         //setting views references for each card view object
         quizButton = findViewById(R.id.quizButton);
+        backbtn = findViewById(R.id.backbtn);
 
         //adding onClickListeners
         quizButton.setOnClickListener(this);
 
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(level1.this, Dashboard.class);
+                level1.this.startActivity ( intent );
+            }
+        });
     }
 
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, QuizModel.class);
         this.startActivity ( intent );
+
 
 
 
