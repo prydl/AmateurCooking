@@ -24,7 +24,7 @@ public class QuizComplete extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, level1.class);
+        Intent intent = new Intent(this, Dashboard.class);
             this.startActivity ( intent );
     }
 }
