@@ -1,20 +1,12 @@
 package com.example.amateurcooking;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 //add imports
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
-
-
-import java.util.Random;
-
-
 
 
 public class QuizModel extends AppCompatActivity implements View.OnClickListener {
@@ -39,13 +31,13 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
 
 
         //find variables by ID
-        question = findViewById(R.id.tvQuestion);
+        question = findViewById(R.id.congratulations);
         option1 = findViewById(R.id.optOne);
         option2 = findViewById(R.id.optTwo);
         option3 = findViewById(R.id.optThree);
         option4 = findViewById(R.id.optFour);
         score = findViewById(R.id.score);
-        quitButton = findViewById(R.id.quitButton);
+        quitButton = findViewById(R.id.doneButton);
 
         quitButton.setOnClickListener(this);
         score.setText("Score: " + mScore);
@@ -63,7 +55,7 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
                     if (counter < mQuestionsLength) {
                         updateQuestion(counter);
                     } else {
-                        gameOver();
+                        completeQuiz();
                     }
 
                 } else {
@@ -85,7 +77,7 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
                     if (counter < mQuestionsLength) {
                         updateQuestion(counter);
                     } else {
-                        gameOver();
+                        completeQuiz();
                     }
                 } else {
                     gameOver();
@@ -106,7 +98,7 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
                     if (counter < mQuestionsLength) {
                         updateQuestion(counter);
                     } else {
-                        gameOver();
+                        completeQuiz();
                     }
                 } else {
                     gameOver();
@@ -127,7 +119,7 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
                     if (counter < mQuestionsLength) {
                         updateQuestion(counter);
                     } else {
-                        gameOver();
+                        completeQuiz();
                     }
                 } else {
                     gameOver();
@@ -147,6 +139,11 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
         option4.setText(mQuestions.getChoice4(num));
 
         mAnswer = mQuestions.getAnswer(num);
+    }
+
+    private void completeQuiz () {
+        Intent intent = new Intent(this, QuizComplete.class);
+        this.startActivity(intent);
     }
 
     private void gameOver () {
