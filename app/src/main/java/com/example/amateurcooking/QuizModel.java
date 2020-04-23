@@ -19,7 +19,7 @@ import java.util.Random;
 
 public class QuizModel extends AppCompatActivity implements View.OnClickListener {
 
-        //initialise variables
+    //initialise variables
     private TextView question, score;
     private Button option1, option2, option3, option4;
     private Button quitButton;
@@ -29,16 +29,13 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
     private Quiz1 mQuestions = new Quiz1();
     private String mAnswer;
     private int mScore = 0;
+    private int counter = 0;
     private int mQuestionsLength = mQuestions.mQuestions.length;
-
-    Random r;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_model);
-
-        r = new Random();
 
 
         //find variables by ID
@@ -51,14 +48,9 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
         quitButton = findViewById(R.id.quitButton);
 
         quitButton.setOnClickListener(this);
-
-
-
-
-
         score.setText("Score: " + mScore);
 
-        updateQuestion(r.nextInt(mQuestionsLength));
+        updateQuestion(counter);
 
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +59,13 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
                 if (option1.getText() == mAnswer) {
                     mScore ++;
                     score.setText("Score: " + mScore);
-                    updateQuestion(r.nextInt(mQuestionsLength));
+                    counter++;
+                    if (counter < mQuestionsLength) {
+                        updateQuestion(counter);
+                    } else {
+                        gameOver();
+                    }
+
                 } else {
                     gameOver();
 
@@ -83,7 +81,12 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
                 if (option2.getText() == mAnswer) {
                     mScore ++;
                     score.setText("Score: " + mScore);
-                    updateQuestion(r.nextInt(mQuestionsLength));
+                    counter++;
+                    if (counter < mQuestionsLength) {
+                        updateQuestion(counter);
+                    } else {
+                        gameOver();
+                    }
                 } else {
                     gameOver();
 
@@ -99,7 +102,12 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
                 if (option3.getText() == mAnswer) {
                     mScore ++;
                     score.setText("Score: " + mScore);
-                    updateQuestion(r.nextInt(mQuestionsLength));
+                    counter++;
+                    if (counter < mQuestionsLength) {
+                        updateQuestion(counter);
+                    } else {
+                        gameOver();
+                    }
                 } else {
                     gameOver();
 
@@ -115,7 +123,12 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
                 if (option4.getText() == mAnswer) {
                     mScore ++;
                     score.setText("Score: " + mScore);
-                    updateQuestion(r.nextInt(mQuestionsLength));
+                    counter++;
+                    if (counter < mQuestionsLength) {
+                        updateQuestion(counter);
+                    } else {
+                        gameOver();
+                    }
                 } else {
                     gameOver();
 
@@ -137,28 +150,30 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
     }
 
     private void gameOver () {
-        AlertDialog.Builder alertDialogueBuilder = new AlertDialog.Builder(QuizModel.this);
-        alertDialogueBuilder
-                .setMessage("Game Over! Your Score is " + mScore + " points.")
-                .setCancelable(false)
-                .setPositiveButton("NEW GAME",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int i) {
-
-                                startActivity(new Intent(getApplicationContext(), QuizModel.class));
-
-                            }
-                        })
-                .setNegativeButton("EXIT",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int i) {
-
-                                finish();
-
-                            }
-                        });
+        Intent intent = new Intent(this, level1.class);
+        this.startActivity ( intent );
+//        AlertDialog.Builder alertDialogueBuilder = new AlertDialog.Builder(QuizModel.this);
+//        alertDialogueBuilder
+//            .setMessage("Game Over! Your Score is " + mScore + " points.")
+//            .setCancelable(false)
+//            .setPositiveButton("NEW GAME",
+//                    new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int i) {
+//
+//                            startActivity(new Intent(getApplicationContext(), QuizModel.class));
+//
+//                        }
+//                    })
+//            .setNegativeButton("EXIT",
+//                    new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int i) {
+//
+//                            finish();
+//
+//                        }
+//                    });
     }
 
 

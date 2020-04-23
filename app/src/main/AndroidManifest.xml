@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuizModel"></activity>
-        <activity android:name=".QuestionsActivity1" />
+        <activity android:name=".QuizModel" />
         <activity android:name=".Notes" />
         <activity android:name=".level5" />
         <activity android:name=".level4" />
