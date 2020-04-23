@@ -21,7 +21,7 @@ public class QuizModel extends AppCompatActivity {
 
         //initialise variables
     private TextView question, score;
-    private RadioButton option1, option2, option3, option4;
+    private Button option1, option2, option3, option4;
     private Button quitButton, nextButton;
 
 
