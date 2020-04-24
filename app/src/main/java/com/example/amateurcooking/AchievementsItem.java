@@ -11,7 +11,7 @@ public class AchievementsItem {
     }
 
     //constructor with arguments
-    public AchievementsItem(String title, String content, int achievementPhoto) {
+    public AchievementsItem(String title, String content, String date, int achievementPhoto) {
         this.title = title;
         this.content = content;
         this.date = date;
