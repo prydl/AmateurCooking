@@ -7,11 +7,15 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
+
+
 import nl.dionsegijn.konfetti.KonfettiView;
 import nl.dionsegijn.konfetti.models.Shape;
+import nl.dionsegijn.konfetti.models.Size;
 import nl.dionsegijn.konfetti.models.Shape.Circle;
 import nl.dionsegijn.konfetti.models.Shape.Square;
-import nl.dionsegijn.konfetti.models.Size;
+
+
 
 
 public class QuizComplete extends AppCompatActivity implements View.OnClickListener {
@@ -29,27 +33,38 @@ public class QuizComplete extends AppCompatActivity implements View.OnClickListe
 
 
         doneButton = findViewById(R.id.doneButton);
-        viewKonfetti = findViewById(R.id.viewKonfetti);
-
         doneButton.setOnClickListener(this);
 
+        viewKonfetti = findViewById(R.id.viewKonfetti);
+
         viewKonfetti.build()
-                .addColors(Color.YELLOW, Color.GREEN, Color.MAGENTA)
+                .addColors(Color.RED, Color.GREEN, Color.YELLOW)
                 .setDirection(0.0, 359.0)
                 .setSpeed(1f, 5f)
                 .setFadeOutEnabled(true)
                 .setTimeToLive(2000L)
-                .addShapes(new Square(), new Circle())
+                .addShapes(Square.INSTANCE, Circle.INSTANCE)
                 .addSizes(new Size(12, 5))
                 .setPosition(-50f, viewKonfetti.getWidth() + 50f, -50f, -50f)
                 .streamFor(300, 5000L);
+
+
+
+
     }
+
+
+
+
+
 
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, Dashboard.class);
             this.startActivity ( intent );
     }
+
+
 }
 
 
