@@ -7,15 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
+//imports for Konfetti
 import nl.dionsegijn.konfetti.KonfettiView;
-import nl.dionsegijn.konfetti.models.Shape;
 import nl.dionsegijn.konfetti.models.Size;
 import nl.dionsegijn.konfetti.models.Shape.Circle;
 import nl.dionsegijn.konfetti.models.Shape.Square;
-
-
 
 
 public class QuizComplete extends AppCompatActivity implements View.OnClickListener {
@@ -34,9 +30,9 @@ public class QuizComplete extends AppCompatActivity implements View.OnClickListe
 
         doneButton = findViewById(R.id.doneButton);
         doneButton.setOnClickListener(this);
-
         viewKonfetti = findViewById(R.id.viewKonfetti);
 
+        //confetti to build when user reaches Quiz Complete page
         viewKonfetti.build()
                 .addColors(Color.RED, Color.GREEN, Color.YELLOW)
                 .setDirection(0.0, 359.0)
@@ -48,16 +44,9 @@ public class QuizComplete extends AppCompatActivity implements View.OnClickListe
                 .setPosition(-50f, viewKonfetti.getWidth() + 50f, -50f, -50f)
                 .streamFor(300, 5000L);
 
-
-
-
     }
 
-
-
-
-
-
+    //set page to Dashboard once quiz is completed
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, Dashboard.class);
