@@ -1,15 +1,14 @@
 package com.example.amateurcooking;
 
 import androidx.appcompat.app.AppCompatActivity;
-//add imports
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-
-public class QuizModel extends AppCompatActivity implements View.OnClickListener {
+public class QuizModel2 extends AppCompatActivity implements View.OnClickListener  {
 
     //initialise variables
     private TextView question, score;
@@ -108,7 +107,7 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
             }
         });
 
-       option4.setOnClickListener(new View.OnClickListener() {
+        option4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -185,5 +184,7 @@ public class QuizModel extends AppCompatActivity implements View.OnClickListener
 
 
 }
+
+
 
 
