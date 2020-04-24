@@ -68,7 +68,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             case R.id.card5: i = new Intent (this, level5.class); startActivity(i);
                 break;
 
-            case R.id.card6: i = new Intent (this, Dashboard.class); startActivity(i);
+            case R.id.card6: i = new Intent (this, Notes.class); startActivity(i);
                 break;
 
             case R.id.achievements: i = new Intent (this, Achievements.class); startActivity(i);

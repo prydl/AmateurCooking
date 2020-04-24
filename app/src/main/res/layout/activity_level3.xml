@@ -52,7 +52,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
-                    android:id="@+id/card1.1"
+                    android:id="@+id/Stat1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -130,7 +130,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
-                    android:id="@+id/card3.1"
+                    android:id="@+id/Stat2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
