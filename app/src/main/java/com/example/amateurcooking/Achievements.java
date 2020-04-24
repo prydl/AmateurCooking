@@ -31,11 +31,11 @@ public class Achievements extends AppCompatActivity {
         mData.add(new AchievementsItem("Valiant Visitor", "Good work on visiting your friends progresses!", "19/04/2020", R.drawable.achievement));
         mData.add(new AchievementsItem("Pushing Through!", "We know you worked extra hard on that recipe!", "17/04/2020", R.drawable.achievement));
         mData.add(new AchievementsItem("@laura35 says:", "My pesto ended up bitter...any solutions?", "16/04/2020", R.drawable.profile2));
-        mData.add(new AchievementsItem("@haileybailey says:", "John how did you make the base of your Red Chicken Curry?", "15/04/2020", R.drawable.profile2));
+        mData.add(new AchievementsItem("@haileybailey says:", "John how did you make the base of your Red Chicken Curry?", "15/04/2020", R.drawable.profile3));
         mData.add(new AchievementsItem("Winner winner, chicken dinner!", "You've become a chicken-cooking expert", "14/04/2020", R.drawable.achievement));
         mData.add(new AchievementsItem("Level 3...Now you're free!", "Level 3 Unlocked!", "12/04/2020", R.drawable.achievement));
         mData.add(new AchievementsItem("Tenner!", "Congratulations! You've opened 10 Recipes.", "10/04/2020", R.drawable.achievement));
-        mData.add(new AchievementsItem("@markhill says:", "I added tofu instead of fish in the tacos..you?", "05/04/2020", R.drawable.achievement));
+        mData.add(new AchievementsItem("@markhill says:", "I added tofu instead of fish in the tacos..you?", "05/04/2020", R.drawable.profile1));
         mData.add(new AchievementsItem("@haileybailey says:", "I love the recipes in Level 2, and your variations!", "03/04/2020", R.drawable.profile3));
         mData.add(new AchievementsItem("I SEA FOOD, I EAT FOOD", "First seafood recipe successfully completed!", "01/04/2020", R.drawable.achievement));
         mData.add(new AchievementsItem("Variety!", "People loved your variation of Overnight Oats!", "30/03/2020", R.drawable.star));

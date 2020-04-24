@@ -8,6 +8,7 @@ import android.content.Intent;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 //https://www.youtube.com/watch?v=d6CfaWW7G5Q&fbclid=IwAR3NunuXviohz-3G2MXht_MxAxhruwccKPAWF7PHETrAw64k-1cBCAsmW5s
 //https://developer.android.com/reference/android/support/v7/widget/CardView#summary
@@ -15,6 +16,7 @@ import android.view.View;
 public class Dashboard extends AppCompatActivity implements View.OnClickListener {
     //declare the cards
     private CardView Level1, Level2, Level3, Level4, Level5, Notes;
+    private ImageView achievement,progress;
 
 
 
@@ -30,6 +32,8 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         Level4 = findViewById(R.id.card4);
         Level5 = findViewById(R.id.card5);
         Notes = findViewById(R.id.card6);
+        achievement = findViewById(R.id.achievements);
+        progress = findViewById(R.id.progress);
 
         //adding onClickListeners
         Level1.setOnClickListener(this);
@@ -38,6 +42,8 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         Level4.setOnClickListener(this);
         Level5.setOnClickListener(this);
         Notes.setOnClickListener(this);
+        achievement.setOnClickListener(this);
+        progress.setOnClickListener(this);
 
     }
 
@@ -62,10 +68,17 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             case R.id.card5: i = new Intent (this, level5.class); startActivity(i);
                 break;
 
-            case R.id.card6: i = new Intent (this, Achievements.class); startActivity(i);
+            case R.id.card6: i = new Intent (this, Dashboard.class); startActivity(i);
                 break;
 
-                //default case break
+            case R.id.achievements: i = new Intent (this, Achievements.class); startActivity(i);
+                break;
+
+            case R.id.progress: i = new Intent (this, ProgressPage.class); startActivity(i);
+                break;
+
+
+            //default case break
             default: break;
 
 
