@@ -24,10 +24,10 @@ public class Achievements extends AppCompatActivity {
         AchievementsRecyclerView = findViewById(R.id.achievementsrv);
         mData = new ArrayList<>();
 
-        mData.add(new AchievementsItem("Tenner!", "Congratulations! You've opened 10 Recipes.", "21/04/2020", R.drawable.achievement));
-        mData.add(new AchievementsItem("Tenner!", "Congratulations! You've opened 10 Recipes.", "21/04/2020", R.drawable.achievement));
-        mData.add(new AchievementsItem("Tenner!", "Congratulations! You've opened 10 Recipes.", "21/04/2020", R.drawable.achievement));
-        mData.add(new AchievementsItem("Tenner!", "Congratulations! You've opened 10 Recipes.", "21/04/2020", R.drawable.achievement));
+        mData.add(new AchievementsItem("Tenner!", "Congratulations! You've opened 10 Recipes.", "24/04/2020", R.drawable.achievement));
+        mData.add(new AchievementsItem("HIGH TEMP!", "Achievement unlocked for making 3 baking recipes!", "22/04/2020", R.drawable.achievement));
+        mData.add(new AchievementsItem("@markhill says:", "John, did you try the garlic potatoes recipe?", "21/04/2020", R.drawable.profile1));
+        mData.add(new AchievementsItem("Your recipe was favourited by @markhill", "Amazing work!", "20/04/2020", R.drawable.star));
         mData.add(new AchievementsItem("Tenner!", "Congratulations! You've opened 10 Recipes.", "21/04/2020", R.drawable.achievement));
         mData.add(new AchievementsItem("Tenner!", "Congratulations! You've opened 10 Recipes.", "21/04/2020", R.drawable.achievement));
         mData.add(new AchievementsItem("Tenner!", "Congratulations! You've opened 10 Recipes.", "21/04/2020", R.drawable.achievement));
