@@ -17,7 +17,7 @@ public class QuizModel2 extends AppCompatActivity implements View.OnClickListene
 
 
     //calling questions
-    private Quiz1 mQuestions = new Quiz1();
+    private Quiz2 mQuestions = new Quiz2();
     private String mAnswer;
     private int mScore = 0;
     private int counter = 0;

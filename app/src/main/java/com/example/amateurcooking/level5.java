@@ -38,7 +38,7 @@ public class level5 extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, QuizModel1.class);
+        Intent intent = new Intent(this, QuizModel5.class);
         this.startActivity ( intent );
     }
 }
