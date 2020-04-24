@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.amateurcooking">
+    package="com.example.amateurcooking" >
 
     <application
         android:allowBackup="true"
@@ -8,8 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".QuizComplete"/>
+        android:theme="@style/AppTheme" >
+        <activity android:name=".Achievements" >
+        </activity>
+        <activity android:name=".ProgressPage" />
+        <activity android:name=".QuizComplete" />
         <activity android:name=".QuizModel" />
         <activity android:name=".Notes" />
         <activity android:name=".level5" />
@@ -18,7 +21,7 @@
         <activity android:name=".level2" />
         <activity android:name=".level1" />
         <activity android:name=".Dashboard" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
