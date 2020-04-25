@@ -8,6 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.amateurcooking.Recipes.Recipe9;
+import com.example.amateurcooking.Recipes.Recipe10;
+import com.example.amateurcooking.Recipes.Recipe11;
+import com.example.amateurcooking.Recipes.Recipe12;
+
 public class level3 extends AppCompatActivity implements View.OnClickListener {
 
     //declare the cards

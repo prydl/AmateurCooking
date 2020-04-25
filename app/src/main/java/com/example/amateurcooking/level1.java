@@ -79,22 +79,5 @@ public class level1 extends AppCompatActivity implements OnClickListener {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
