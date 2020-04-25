@@ -33,7 +33,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:contentDescription="TODO"
-                app:srcCompat="@drawable/bruschetta" />
+                app:srcCompat="@drawable/garlicpotatoes" />
 
             <ImageView
                 android:id="@+id/imageView2"
