@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="50MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,7 +91,10 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="SERVES 4"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Dice the onion, carrots, celery and potatoes. \n2. Heat oil in a pot and add onion, garlic, salt and pepper and cook till onions are soft. \n3. Add carrots, celery, potatoes and cook while stirring. \n4. Add Italian seasoning, vegetable stock, water, tomatoes and pepper. \n5. Boil for 35mins or until vegetables are soft. \n6. Remove from heat and stir in parsley and lemon juice. \n7. Add more salt and pepper if needed and serve hot.  " />
 
         </LinearLayout>
     </ScrollView>

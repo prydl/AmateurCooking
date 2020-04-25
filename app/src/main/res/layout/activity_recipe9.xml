@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="30MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,7 +91,10 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="SERVES 8"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Preheat the oven: Preheat oven to 200C. \n2. Pour the pizza sauce evenly across the 2 pizza bases. \n3. Add 2 handfuls of cheese across both bases. \n4. Place the peperoni slices on the top and top the pizza with more cheese and season with pepper. \n5. Cook the pizza in the oven for 15-20mins or until the cheese is golden brown. \n6. Sprinkle oregano on top of the pizzas. \n7. Slice and serve the pizzas. " />
 
         </LinearLayout>
     </ScrollView>
