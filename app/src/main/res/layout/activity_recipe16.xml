@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="1HR"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,7 +91,10 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="SERVES 4"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Preheat oven to 180C and lightly grease baking dish \n2. Dice the onion \n 3. Heat the oil in a pan and add the onion, spinach and corn \n4. Season with enchilada seasoning  \n 5. Stir through ricotta and two-thirds of the cheese\n 6. Divide mixture into 8 portions and spread 2 tablespoons enchilada sauce over the base of the prepared dish\n 7. Place a portion of filling on each and roll up to enclose and place seam side down in the dish \n8. Repeat with the remaining tortillas and filling and pour the remaining sauce over the enchiladas \n9. Sprinkle with the remaining cheese and bake for 30-35 minutes or until the enchiladas are \n 10. Serve topped with sour cream, chilli and coriander. " />
 
         </LinearLayout>
     </ScrollView>

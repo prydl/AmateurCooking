@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="15MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,7 +91,10 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="SERVES 2"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Crack the eggs into a bowl and beat them then slowly add the milk and continue to mix the mixture \n2. Dice tomato, shallots and mushrooms and add to the egg mixture along with cheese, salt and pepper \n3. Heat a pan over a medium heat and add butter and let it melt until pan is covered. \n4. Add the egg mixture to the pan and tilt and rotate the pan so that the mixture evenly spreads. \n5. Use the spatula to flip and omelette over and cook on the other side when the eggs are almost set on the surface \n6. Slide the spatula under one side of the omelette and when the eggs are moist and almost set, fold the omelette in half. \n7. Let the folded omelette cook for a further minute (depending on how you like it cooked) and then serve and eat immediately " />
 
         </LinearLayout>
     </ScrollView>

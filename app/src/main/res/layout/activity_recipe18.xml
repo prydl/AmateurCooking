@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
                 android:gravity="center"
-                android:text="Apple Pie"
+                android:text="Mushroom Risotto"
                 android:textColor="@color/title_text_color"
                 android:textSize="30dp"
                 android:textStyle="bold" />
@@ -43,7 +43,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:contentDescription="TODO"
-                app:srcCompat="@drawable/applepie" />
+                app:srcCompat="@drawable/mushroomrisotto" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="1HR 15MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,7 +91,11 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="4 SERVES"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +107,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Add flour, pinch of salt, butter into a large mixing bowl. \n 2. Rub lightly into flour with your fingertips and then stir through sugar. \n 3. Beat 1 egg then drizzle over flour mixture. \n 4. Bring the dough together by cutting the liquid into the dough with a knife, then form into a smooth ball with your hands.\n 5. Divide dough into two pieces, one slightly larger than the other.\n 6. Wrap in plastic wrap, and chill for 30 minutes. \n7. Peel and core the apples and cut each into 8 pieces.\n 8. Toss immediately with lemon juice in a large bowl. \n9. Place the butter and sugar in a large frypan over medium-low heat. \n 10. Add apples and spices, then stir to coat.\n 11. Cook, stirring occasionally, for 10 minutes or until apples have softened. Set aside to cool.\n 12. Place filling in base of larger flattened pastry ball and then top with smaller pastry ball.\n 13. Preheat oven to 180C, place pie dish on a baking tray and sprinkle caster sugar and bake for 45 minutes or until golden brown. " />
 
         </LinearLayout>
     </ScrollView>

@@ -23,8 +23,6 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/leftarrow" />
 
-
-
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
@@ -67,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="20 MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -92,7 +91,10 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="SERVES 4"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -104,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Half-fill a pan with water and bring to the boil. Rinse the quinoa and then add to the water, stir well and simmer for 10 mins \n2. Dice tomatoes, coriander, onions, avocados and red chilly finely and pour ingredients in a bowl \n3. Pour the extra virgin olive oil into heated medium sized pan and cook the chicken \n4. Rinse the cooked quinoa in a sieve under cold water and then press hard with a serving spoon to remove excess water. \n5. Tip the quinoa into the bowl with the tomatoes, coriander, onions and red chillies and add the lime juice  \n6. Add the chicken pieces to this and toss together gently before serving.  " />
 
         </LinearLayout>
     </ScrollView>

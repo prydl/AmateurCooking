@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="45MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,7 +91,10 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="SERVES 3"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Prepare salsa by dicing tomatoes, brown onion and chilli finely and place in bowl. \n2. Add lime juice and pinch of salt to the salsa. \n3. Place tempura fish batter and water into a bowl and mix until even consistency. \n4. Add fish strips into the tempura batter and coat evenly. \n5. Heat oil in a medium saucepan and add fish strips and fry for 30 seconds. Once cooked, remove from the oil and set aside on paper towel to drain 6.	Heat the tortillas on a separate pan until warm. \n7. Place tortilla on a plate and put 2-3 strips of the fish on it and drizzle with mayonnaise. \n8. Garnish with coriander and serve.  " />
 
         </LinearLayout>
     </ScrollView>
