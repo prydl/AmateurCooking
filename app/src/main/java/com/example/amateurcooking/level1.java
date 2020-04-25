@@ -16,6 +16,7 @@ import com.example.amateurcooking.Recipes.Recipe3;
 import com.example.amateurcooking.Recipes.Recipe4;
 
 public class level1 extends AppCompatActivity implements OnClickListener {
+
     //declare the cards
     private Button quizButton;
     private ImageButton backbtn;
@@ -65,7 +66,7 @@ public class level1 extends AppCompatActivity implements OnClickListener {
             case R.id.backbtn: i = new Intent (this, Dashboard.class); startActivity(i);
                 break;
 
-            case R.id.quizButton: i = new Intent (this, Quiz1.class); startActivity(i);
+            case R.id.quizButton: i = new Intent (this, QuizModel1.class); startActivity(i);
                 break;
 
             //default case break

@@ -65,7 +65,7 @@ public class level2 extends AppCompatActivity implements View.OnClickListener {
             case R.id.backbtn: i = new Intent (this, Dashboard.class); startActivity(i);
                 break;
 
-            case R.id.quizButton: i = new Intent (this, Quiz2.class); startActivity(i);
+            case R.id.quizButton: i = new Intent (this, QuizModel2.class); startActivity(i);
                 break;
 
             //default case break
