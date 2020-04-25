@@ -17,7 +17,6 @@
         <activity android:name=".QuizComplete" />
         <activity android:name=".QuizModel1" />
         <activity android:name=".QuizModel3" />
-        <activity android:name=".Notes" />
         <activity android:name=".level5" />
         <activity android:name=".level4" />
         <activity android:name=".level3" />
