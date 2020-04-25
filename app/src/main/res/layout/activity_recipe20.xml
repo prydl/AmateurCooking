@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="9HRS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,7 +91,11 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="4 SERVES"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +107,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Make the dosa batter: Cover rice with 4 cups cold water and lentils/fenugreek seeds with cold water in separate bowls \n2. Leave both to soak for 4 to 6 hours and then drain both mixtures.\n3. Put rice in a blender, add 1 cup cold water and grind to a smooth paste.\n4. Repeat process with the lentil-fenugreek mixture.\n5. Combine the two pastes in a bowl and whisk together and let it sit for about 8 hours.\n6. Make the potato filling: Put oil in a pan and add mustard seeds, cumin seeds, red peppers and onion and stir for about 5 minutes until onions have softened.\n7. Add salt, turmeric, ginger and garlic paste, curry leaves and green chilli.\n8. Add potatoes and 1/2 cup water and stir for 5mins\n9. Mash potatoes a bit and season with salt and add cilantro\n10. Use the dosa batter to make round dosas, adding two spoonfuls of potatoes to each and serve  "/>
 
         </LinearLayout>
     </ScrollView>

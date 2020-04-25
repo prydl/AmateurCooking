@@ -38,22 +38,26 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="265dp"
-        android:layout_height="86dp"
+        android:layout_width="290dp"
+        android:layout_height="108dp"
         android:layout_marginStart="102dp"
         android:layout_marginLeft="102dp"
+        android:layout_marginTop="53dp"
         android:layout_marginEnd="103dp"
         android:layout_marginRight="103dp"
         android:layout_marginBottom="416dp"
         android:gravity="center"
         android:textColor="@color/title_text_color"
-        android:textSize="35dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/getButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Can we interest you in a giggle?" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="On the menu today, Chuck Norris Food Quotes." />
+
+
 
     <Button
         android:id="@+id/getButton"

@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="1HR 15MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,7 +91,10 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="SERVES 5"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Heat oil in a saucepan and add onion and garlic until onion is soft \n2. Add mince and use a wooden spoon to break up mince and stir for 8 minutes\n 3. Add sauce and season with salt and pepper Simmer for 40 minutes or until sauce has thickened \n4. Preheat oven to 180C and lightly grease baking dish\n5. Spoon 1/2 cup mince mixture over base of dish and place ¼ of pasta sheets over meat mixture \n  6. Spoon one-third of the remaining mince mixture over pasta and drizzle with one-quarter of the cream and cheddar cheese. Repeat layers twice.\n7.Top with remaining pasta sheets, cream and cheddar cheese \n8. Sprinkle with parmesan and cover loosely with foil. \n9. Bake for 45 minutes. Remove foil. Bake for 15 minutes or until pasta is tender and cheese golden and serve   " />
 
         </LinearLayout>
     </ScrollView>
