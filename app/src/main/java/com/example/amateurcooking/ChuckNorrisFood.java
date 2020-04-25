@@ -2,9 +2,12 @@ package com.example.amateurcooking;
 
 //other imports
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,10 +22,11 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import com.example.amateurcooking.Entities.QuoteResponse;
 import com.example.amateurcooking.Entities.QuoteService;
 
-public class ChuckNorrisFood extends AppCompatActivity {
+public class ChuckNorrisFood extends AppCompatActivity implements View.OnClickListener {
 
     TextView quoteBox;
     Button getButton;
+    private ImageButton backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +37,14 @@ public class ChuckNorrisFood extends AppCompatActivity {
         quoteBox = findViewById(R.id.quoteBox);
         getButton = findViewById(R.id.getButton);
 
-        getButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        backbtn = findViewById(R.id.backbtn);
+        backbtn.setOnClickListener(this);
 
-                // set a text in between quotes to avoid blank space
-                quoteBox.setText("Getting a foodie quote...");
-                setQuote();
-            }
+        getButton.setOnClickListener(v -> {
+
+            // set a text in between quotes to avoid blank space
+            quoteBox.setText("Getting a foodie quote...");
+            setQuote();
         });
 
         setQuote();
@@ -75,6 +79,12 @@ public class ChuckNorrisFood extends AppCompatActivity {
                 Toast.makeText(ChuckNorrisFood.this, msg, Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(this, Dashboard.class);
+        this.startActivity ( intent );
     }
 }
 
