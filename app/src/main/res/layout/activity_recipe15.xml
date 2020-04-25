@@ -66,8 +66,9 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:fontFamily="sans-serif-condensed-medium"
+                android:text="40MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,6 +91,9 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:textColor="#000000"
+                android:text="SERVES 6"
+                android:textStyle="bold"
                 android:textSize="18sp" />
 
             <TextView
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Combine mince, ginger, garlic, soy sauce, chives and cabbage in a bowl. \n2. Spoon 2 heaped teaspoons mince mixture on 1 half of each wrapper.  \n3. Brush edge with cold water and fold wrappers over to enclose filling.  \n4. Pleat edges together to seal and place dumplings on a tray lined with baking paper. \n5. Place a large steamer lined with baking paper over a saucepan of simmering water for 6mins.  \n6. Cook dumplings for 4 to 5 minutes each or until cooked through.  \n7. Serve hot with dumpling sauce. " />
 
         </LinearLayout>
     </ScrollView>

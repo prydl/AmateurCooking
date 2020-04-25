@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="40MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,7 +91,10 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+                android:text="SERVES 5"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Preheat oven to 180C \n2. Line 2 baking trays with baking paper. \n3. Beat butter and sugar well combined. \n4. Beat in egg and vanilla until combined while stirring in flour slowly. \n5. Add in milk choc bits. \n6. Roll 2 tablespoonfuls of mixture into balls and place on the trays (try to keep them 2-3cm apart) and them slightly. \n7. Bake for 20 minutes or until light golden and serve once cooled down.  " />
 
         </LinearLayout>
     </ScrollView>
