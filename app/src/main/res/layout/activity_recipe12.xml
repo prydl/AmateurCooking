@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="1HR"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -90,6 +91,9 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:text="SERVES 6-8"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textSize="18sp" />
 
             <TextView
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Preheat the oven to 180C degrees  \n2. Lightly coat a cake pan with butter  \n3. Crack the eggs and add butter, sugar, vanilla extract and milk to a bowl and beat well \n4. Add the flour and baking powder slowly and mix until well combined  \n5. Add more milk if needed \n6. Pour into cake pan and bake for 40 minutes or until a wooden skewer inserted in the centre comes out clean \n7. Allow the cake to cool and serve  " />
 
         </LinearLayout>
     </ScrollView>

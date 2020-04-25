@@ -65,9 +65,10 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif"
+                android:text="35MINS"
                 android:textColor="#000000"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -82,15 +83,18 @@
                 app:srcCompat="@drawable/serves" />
 
             <TextView
-                android:id="@+id/serves"
-                android:layout_width="197dp"
-                android:layout_height="29dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:textSize="18sp" />
+            android:id="@+id/serves"
+            android:layout_width="197dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="SERVES 3"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe"
@@ -102,7 +106,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="1dp"
-                android:text="Recipe here..." />
+                android:text="1. Dice onion, capsicum, broccolini and finely slice garlic. \n2. Heat a large wok over and add the oil. \n3. Add beef strips once wok is hot and cook for 1-2 minutes. \n4. Remove the beef strips from the oil and add the diced vegetables in the remaining oil. \n5. Add water and cook for 10mins or until vegetables are tender. \n6. Add soy sauce, garlic and oyster sauce to the wok and mix well. \n7. Add the beef and toss until heated and serve hot.  " />
 
         </LinearLayout>
     </ScrollView>
