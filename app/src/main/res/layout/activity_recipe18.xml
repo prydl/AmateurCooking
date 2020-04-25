@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
                 android:gravity="center"
-                android:text="Mushroom Risotto"
+                android:text="Apple Pie"
                 android:textColor="@color/title_text_color"
                 android:textSize="30dp"
                 android:textStyle="bold" />
@@ -43,7 +43,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:contentDescription="TODO"
-                app:srcCompat="@drawable/mushroomrisotto" />
+                app:srcCompat="@drawable/applepie" />
 
             <ImageView
                 android:id="@+id/imageView2"
