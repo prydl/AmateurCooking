@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.amateurcooking.R;
 import com.example.amateurcooking.level1;
+import com.example.amateurcooking.level5;
 
 public class Recipe20 extends AppCompatActivity implements View.OnClickListener {
     private ImageButton backbtn;
@@ -28,7 +29,7 @@ public class Recipe20 extends AppCompatActivity implements View.OnClickListener 
 
 
     public void onClick(View v) {
-        Intent intent = new Intent(this, level1.class);
+        Intent intent = new Intent(this, level5.class);
         this.startActivity ( intent );
 
     }

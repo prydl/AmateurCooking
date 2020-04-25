@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.amateurcooking">
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Notes"></activity>
-        <activity android:name=".QuizModel2" />
         <activity android:name=".Recipes.Recipe1" />
         <activity android:name=".Recipes.Recipe2" />
         <activity android:name=".Recipes.Recipe3" />
@@ -35,14 +30,14 @@
         <activity android:name=".Recipes.Recipe18" />
         <activity android:name=".Recipes.Recipe19" />
         <activity android:name=".Recipes.Recipe20" />
-
-        <activity android:name=".QuizModel4" />
-        <activity android:name=".QuizModel5" />
         <activity android:name=".Achievements" />
         <activity android:name=".ProgressPage" />
         <activity android:name=".QuizComplete" />
         <activity android:name=".QuizModel1" />
+        <activity android:name=".QuizModel2" />
         <activity android:name=".QuizModel3" />
+        <activity android:name=".QuizModel4" />
+        <activity android:name=".QuizModel5" />
         <activity android:name=".level5" />
         <activity android:name=".level4" />
         <activity android:name=".level3" />
