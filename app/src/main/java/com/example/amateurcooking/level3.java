@@ -1,6 +1,7 @@
 package com.example.amateurcooking;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,33 +18,65 @@ public class level3 extends AppCompatActivity implements View.OnClickListener {
 
     //declare the cards
     private Button quizButton;
-
     private ImageButton backbtn;
+    private CardView pepperonipizza, pestopasta, beefstirfry, vanillacake;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level3);
 
-        //setting views references for each card view object
-        quizButton = findViewById(R.id.quizButton);
+        ///setting views references for each card view object
+        pepperonipizza = findViewById(R.id.pepperonipizza);
+        pestopasta = findViewById(R.id.pestopasta);
+        beefstirfry = findViewById(R.id.beefstirfry);
+        vanillacake = findViewById(R.id.vanillacake);
         backbtn = findViewById(R.id.backbtn);
+        quizButton = findViewById(R.id.quizButton);
 
         //adding onClickListeners
+        pepperonipizza.setOnClickListener(this);
+        pestopasta.setOnClickListener(this);
+        beefstirfry.setOnClickListener(this);
+        vanillacake.setOnClickListener(this);
+        backbtn.setOnClickListener(this);
         quizButton.setOnClickListener(this);
 
-        backbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(level3.this, Dashboard.class);
-                level3.this.startActivity ( intent );
-            }
-        });
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, QuizModel3.class);
-        this.startActivity ( intent );
+        Intent i;
+
+        //switch statements to navigate each card to its own page
+        switch (v.getId()) {
+            case R.id.fishtacos: i = new Intent (this, Recipe9.class); startActivity(i);
+                break;
+
+            case R.id.overnightoats: i = new Intent (this, Recipe10.class); startActivity(i);
+                break;
+
+            case R.id.chocchipcookies: i = new Intent (this, Recipe11.class); startActivity(i);
+                break;
+
+            case R.id.vegetablesoup: i = new Intent (this, Recipe12.class); startActivity(i);
+                break;
+
+            case R.id.backbtn: i = new Intent (this, Dashboard.class); startActivity(i);
+                break;
+
+            case R.id.quizButton: i = new Intent (this, Quiz3.class); startActivity(i);
+                break;
+
+            //default case break
+            default: break;
+
+
+        }
+
+
+
+
     }
+
 }
