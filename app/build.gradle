@@ -14,6 +14,14 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    //in case of Java 8 bug
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -48,6 +56,11 @@ dependencies {
     implementation 'android.arch.persistence.room:runtime:1.0.0'
     annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    //adding dependencies for Chuck Norris food
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
 
 
 }

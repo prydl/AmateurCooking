@@ -16,7 +16,7 @@ import android.widget.ImageView;
 public class Dashboard extends AppCompatActivity implements View.OnClickListener {
     //declare the cards
     private CardView Level1, Level2, Level3, Level4, Level5, Notes;
-    private ImageView achievement,progress;
+    private ImageView achievement,progress, chuckapi;
 
 
 
@@ -34,6 +34,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         Notes = findViewById(R.id.card6);
         achievement = findViewById(R.id.achievements);
         progress = findViewById(R.id.progress);
+        chuckapi = findViewById(R.id.chuckapi);
 
         //adding onClickListeners
         Level1.setOnClickListener(this);
@@ -44,6 +45,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         Notes.setOnClickListener(this);
         achievement.setOnClickListener(this);
         progress.setOnClickListener(this);
+        chuckapi.setOnClickListener(this);
 
     }
 
@@ -75,6 +77,9 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 break;
 
             case R.id.progress: i = new Intent (this, ProgressPage.class); startActivity(i);
+                break;
+
+            case R.id.chuckapi: i = new Intent (this, ChuckNorrisFood.class); startActivity(i);
                 break;
 
 
