@@ -13,14 +13,14 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="406dp"
+            android:layout_height="30dp"
             android:background="#00008577"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView"
@@ -276,15 +276,10 @@
             android:id="@+id/achievements"
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:layout_marginStart="84dp"
-            android:layout_marginLeft="84dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="23dp"
             android:layout_marginEnd="54dp"
             android:layout_marginRight="54dp"
-            android:layout_marginBottom="18dp"
-            app:layout_constraintBottom_toTopOf="@+id/progress"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:srcCompat="@drawable/achievement" />
 
@@ -292,22 +287,22 @@
             android:id="@+id/chuckapi"
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="54dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/achievements"
             app:srcCompat="@drawable/chucknorris" />
 
         <ImageView
             android:id="@+id/progress"
             android:layout_width="36dp"
             android:layout_height="36dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="54dp"
-            android:layout_marginRight="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/achievements"
+            app:layout_constraintTop_toBottomOf="@+id/chuckapi"
             app:srcCompat="@drawable/progress" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
