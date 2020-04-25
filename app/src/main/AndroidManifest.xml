@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Notes"></activity>
         <activity android:name=".QuizModel2" />
-        <activity android:name=".Recipe1" />
+        <activity android:name=".Recipes.Recipe1" />
         <activity android:name=".QuizModel4" />
         <activity android:name=".QuizModel5" />
         <activity android:name=".Achievements" />

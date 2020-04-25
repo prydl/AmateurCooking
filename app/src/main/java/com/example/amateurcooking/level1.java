@@ -9,7 +9,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
+
+import com.example.amateurcooking.Recipes.Recipe1;
 
 public class level1 extends AppCompatActivity implements OnClickListener {
     //declare the cards
