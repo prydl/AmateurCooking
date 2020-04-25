@@ -1,21 +1,20 @@
 package com.example.amateurcooking;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.amateurcooking.Recipes.Recipe1;
 import com.example.amateurcooking.Recipes.Recipe2;
 import com.example.amateurcooking.Recipes.Recipe3;
 import com.example.amateurcooking.Recipes.Recipe4;
 
-public class level1 extends AppCompatActivity implements OnClickListener {
+public class level1 extends AppCompatActivity implements View.OnClickListener {
 
     //declare the cards
     private Button quizButton;

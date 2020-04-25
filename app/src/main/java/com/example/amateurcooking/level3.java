@@ -1,13 +1,13 @@
 package com.example.amateurcooking;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.amateurcooking.Recipes.Recipe9;
 import com.example.amateurcooking.Recipes.Recipe10;
@@ -50,16 +50,16 @@ public class level3 extends AppCompatActivity implements View.OnClickListener {
 
         //switch statements to navigate each card to its own page
         switch (v.getId()) {
-            case R.id.fishtacos: i = new Intent (this, Recipe9.class); startActivity(i);
+            case R.id.pepperonipizza: i = new Intent (this, Recipe9.class); startActivity(i);
                 break;
 
-            case R.id.overnightoats: i = new Intent (this, Recipe10.class); startActivity(i);
+            case R.id.pestopasta: i = new Intent (this, Recipe10.class); startActivity(i);
                 break;
 
-            case R.id.chocchipcookies: i = new Intent (this, Recipe11.class); startActivity(i);
+            case R.id.beefstirfry: i = new Intent (this, Recipe11.class); startActivity(i);
                 break;
 
-            case R.id.vegetablesoup: i = new Intent (this, Recipe12.class); startActivity(i);
+            case R.id.vanillacake: i = new Intent (this, Recipe12.class); startActivity(i);
                 break;
 
             case R.id.backbtn: i = new Intent (this, Dashboard.class); startActivity(i);
