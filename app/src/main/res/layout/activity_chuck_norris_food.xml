@@ -29,6 +29,8 @@
         android:layout_marginEnd="103dp"
         android:layout_marginRight="103dp"
         android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColorHighlight="#434242"
         app:layout_constraintBottom_toTopOf="@+id/getButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
