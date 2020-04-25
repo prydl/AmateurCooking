@@ -146,7 +146,7 @@ public class QuizModel3 extends AppCompatActivity implements View.OnClickListene
     }
 
     private void gameOver () {
-        Intent intent = new Intent(this, level1.class);
+        Intent intent = new Intent(this, level3.class);
         this.startActivity ( intent );
 //        AlertDialog.Builder alertDialogueBuilder = new AlertDialog.Builder(QuizModel.this);
 //        alertDialogueBuilder
@@ -175,7 +175,7 @@ public class QuizModel3 extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, level1.class);
+        Intent intent = new Intent(this, level3.class);
         this.startActivity ( intent );
 
     }

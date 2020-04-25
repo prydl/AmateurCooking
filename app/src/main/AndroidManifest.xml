@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".QuizModel2"></activity>
+        <activity android:name=".QuizModel4"></activity>
+        <activity android:name=".QuizModel5"></activity>
         <activity android:name=".Achievements"></activity>
         <activity android:name=".ProgressPage" />
         <activity android:name=".QuizComplete" />
         <activity android:name=".QuizModel1" />
+        <activity android:name=".QuizModel3" />
         <activity android:name=".Notes" />
         <activity android:name=".level5" />
         <activity android:name=".level4" />

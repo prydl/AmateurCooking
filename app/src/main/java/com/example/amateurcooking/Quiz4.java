@@ -4,37 +4,37 @@ package com.example.amateurcooking;
 public class Quiz4 {
 
     public String mQuestions[] = {
-            "Which of these is not an ingredient of the cheese omelette? ",
-            "How do you beat the eggs in the first step of the omelette recipe?",
-            "What do you add immediately after the eggs have been beaten for the cheese omelette?",
-            "Which of these is used as a garnish at the very end for bruschetta?",
-            "What is a good colour sign that the sourdough bread is toasted?",
-            "What combination of three ingredients form the main topping for bruschetta ",
-            "How long do you simmer the quinoa for the chicken salad?",
-            "What do you need to ensure is in the pan before cooking the chicken for the chicken salad?",
-            "How much lime juice should be added in the chicken salad?",
-            "Which of these is an ingredient for garlic roast potatoes?",
-            "What portions should the potatoes be cut for the garlic roast potatoes?",
-            "How long should you bake the potatoes for garlic roast potatoes?"
+            "How many grams of chicken was used in the red curry recipe?",
+            "How are the chicken dumplings cooked?",
+            "How much corn is used in the enchilada recipe?",
+            "What sauce are the chicken dumplings served with?",
+            "What essential seasoning is to make the butter chicken?",
+            "How long is the red thai curry boiled for before serving?",
+            "Which of the following ingredients is not used to garnish the enchilada?",
+            "How much butter needs to go into the butter chicken?",
+            "How many table spoons of red curry paste are added?",
+            "What ingredient(s) are added just before serving the butter chicken?",
+            "How long are the dumplings steamed for?",
+            "Which of the following is added after the onion, spinach & corn is added in the enchilada recipe?"
 
     };
 
     private String mChoices[][] = {
-            {"Eggs", "Milk", "Butter", "Flour"},
-            {"Slow speed", "Fast speed", "Medium speed", "You don't beat them"},
-            {"Tomato", "Cheese", "Milk", "Salt and Pepper"},
-            {"Onion", "Garlic powder", "Olive oil", "Parsley"},
-            {"Black", "Looks the same", "Dark brown", "Golden Brown"},
-            {"Tomato, onion & parsley", "Tomato, onion & ginger", "Onion, ginger & garlic", "Onion, chilli & tomato "},
-            {"30 mins", "20 mins", "10 mins", "5 mins"},
-            {"Quinoa", "Avocado", "Olive oil", "Onions"},
-            {"4 tbsp", "1 tbsp", "3 tbsp", "2 tbsp"},
-            {"Minced garlic", "Coriander", "Garlic sauce", "Tomatoes"},
-            {"Halves", "Quarters", "Thirds", "Whole"},
-            {"15 mins", "30 mins", "45 mins", "60 mins"}
+            {"150g", "200g", "230g", "250g"},
+            {"Steamed", "Boiled", "Pan-Fried", "Boiled & Pan-Fried"},
+            {"1/4 cup", "1/2 cup", "3/4 cup", "1 cup"},
+            {"Soy Sauce", "Chilli Oil", "Dumpling Sauce", "Chilli Sauce"},
+            {"Pepper and Salt", "Garam Masala", "Chilli Flakes", "Saffron"},
+            {"2 mins", "5 mins", "10 mins", "15 mins"},
+            {"Sour Cream", "Chilli", "Coriander", "Guacamole"},
+            {"10g", "15g", "20g", "25g"},
+            {"3-4 tbsp", "5 tbsp", "5-6 tbsp", "6 tbsp"},
+            {"Cream & Coriander", "Coriander", "Salt & Pepper", "Garam Masala"},
+            {"5 mins", "6 mins", "8 mins", "10 mins"},
+            {"Chilli's", "Enchilada Seasoning", "Ricotta & Mozzarella", "Coriander"}
     };
 
-    private String mAnswer[] = {"Flour", "Slow speed", "Milk", "Garlic powder", "Golden brown", "Tomato, onion & parsley", "10 mins", "Olive oil", "2 tbsp", "Minced garlic", "Quarters", "45 mins"};
+    private String mAnswer[] = {"200g", "Steamed", "1/2 cup", "Dumpling Sauce", "Garam Masala", "10 mins", "Guacamole", "25g", "5-6 tbsp", "Cream & Coriander", "6 mins", "Enchilada Seasoning"};
 
     public String getQuestion (int a) {
         String question = mQuestions[a];

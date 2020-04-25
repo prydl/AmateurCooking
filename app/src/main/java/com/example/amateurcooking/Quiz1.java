@@ -24,7 +24,7 @@ public class Quiz1  {
             {"Slow speed", "Fast speed", "Medium speed", "You don't beat them"},
             {"Tomato", "Cheese", "Milk", "Salt and Pepper"},
             {"Onion", "Garlic powder", "Olive oil", "Parsley"},
-            {"Black", "Looks the same", "Dark brown", "Golden Brown"},
+            {"Black", "Looks the same", "Dark brown", "Golden brown"},
             {"Tomato, onion & parsley", "Tomato, onion & ginger", "Onion, ginger & garlic", "Onion, chilli & tomato "},
             {"30 mins", "20 mins", "10 mins", "5 mins"},
             {"Quinoa", "Avocado", "Olive oil", "Onions"},

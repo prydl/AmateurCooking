@@ -1,40 +1,40 @@
 package com.example.amateurcooking;
 
-//TO-DO: fill all questions for Quiz 2
-public class Quiz2 {
+//TO-DO: fill all questions for Quiz 1
+public class Quiz2  {
 
     public String mQuestions[] = {
-            "Which of these is not an ingredient of the cheese omelette? ",
-            "How do you beat the eggs in the first step of the omelette recipe?",
-            "What do you add immediately after the eggs have been beaten for the cheese omelette?",
-            "Which of these is used as a garnish at the very end for bruschetta?",
-            "What is a good colour sign that the sourdough bread is toasted?",
-            "What combination of three ingredients form the main topping for bruschetta ",
-            "How long do you simmer the quinoa for the chicken salad?",
-            "What do you need to ensure is in the pan before cooking the chicken for the chicken salad?",
-            "How much lime juice should be added in the chicken salad?",
-            "Which of these is an ingredient for garlic roast potatoes?",
-            "What portions should the potatoes be cut for the garlic roast potatoes?",
-            "How long should you bake the potatoes for garlic roast potatoes?"
+            "What else needs to be added to the salsa besides, tomatoes, onion and chilli for the fish tacos?",
+            "What is the garnish for the fish tacos?",
+            "What is the fish drizzled with for fish tacos?",
+            "What sweet ingredient is added to the overnight oats?",
+            "How long should we refrigerate the overnight oats?",
+            "What are the overnight oats served with?",
+            "How long should the choc chip cookies be baked for?",
+            "What two types of sugars are used for choc chip cookies?",
+            "How much mixture should each ball contain for choc chip cookies?",
+            "Which vegetable is added prior to others for the vegetable soup?",
+            "Which of these is not an ingredient of vegetable soup?",
+            "How long should you boil the vegetable soup?"
 
     };
 
     private String mChoices[][] = {
-            {"Eggs", "Milk", "Butter", "Flour"},
-            {"Slow speed", "Fast speed", "Medium speed", "You don't beat them"},
-            {"Tomato", "Cheese", "Milk", "Salt and Pepper"},
-            {"Onion", "Garlic powder", "Olive oil", "Parsley"},
-            {"Black", "Looks the same", "Dark brown", "Golden Brown"},
-            {"Tomato, onion & parsley", "Tomato, onion & ginger", "Onion, ginger & garlic", "Onion, chilli & tomato "},
-            {"30 mins", "20 mins", "10 mins", "5 mins"},
-            {"Quinoa", "Avocado", "Olive oil", "Onions"},
-            {"4 tbsp", "1 tbsp", "3 tbsp", "2 tbsp"},
-            {"Minced garlic", "Coriander", "Garlic sauce", "Tomatoes"},
-            {"Halves", "Quarters", "Thirds", "Whole"},
-            {"15 mins", "30 mins", "45 mins", "60 mins"}
+            {"Lime juice & pinch of salt", "Olive oil", "Mayonnaise", "Coriander"},
+            {"Garlic", "Ginger", "Parsley", "Coriander"},
+            {"Olive oil", "Chilli sauce", "Mayonnaise", "Lime juice"},
+            {"Sugar", "Chocolate", "Honey", "Cream"},
+            {"2 hrs", "30 mins", "4 hrs", "Overnight"},
+            {"Tomatoes & Onions", "Bananas & Strawberries", "Grapes & Blueberries", "Raspberries and Blackberries"},
+            {"10 mins", "20 mins", "30 mins", "40 mins"},
+            {"Brown & caster sugar", "Raw & brown sugar", "Raw & caster sugar", "Brown & white sugar"},
+            {"1 tbsp", "2 tbsp", "3 tbsp", "4 tbsp"},
+            {"Carrot", "Potato", "Onion", "Celery"},
+            {"Italian Seasoning", "Vegetable stock", "Lemon juice", "Chicken"},
+            {"15 mins", "25 mins", "35 mins", "45 mins"}
     };
 
-    private String mAnswer[] = {"Flour", "Slow speed", "Milk", "Garlic powder", "Golden brown", "Tomato, onion & parsley", "10 mins", "Olive oil", "2 tbsp", "Minced garlic", "Quarters", "45 mins"};
+    private String mAnswer[] = {"Lime juice & pinch of salt", "Coriander", "Mayonnaise", "Honey", "Overnight", "Bananas & Strawberries", "20 mins", "Brown & caster sugar", "2 tbsp", "Onion", "Chicken", "35 mins"};
 
     public String getQuestion (int a) {
         String question = mQuestions[a];

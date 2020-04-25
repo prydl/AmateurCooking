@@ -111,8 +111,8 @@
 
     <TextView
         android:id="@+id/congratulations"
-        android:layout_width="282dp"
-        android:layout_height="73dp"
+        android:layout_width="342dp"
+        android:layout_height="89dp"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
         android:layout_marginTop="64dp"

@@ -175,7 +175,7 @@ public class QuizModel4 extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, level1.class);
+        Intent intent = new Intent(this, level4.class);
         this.startActivity ( intent );
 
     }
