@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.example.amateurcooking.Recipes.Recipe1;
+import com.example.amateurcooking.Recipes.Recipe2;
+import com.example.amateurcooking.Recipes.Recipe3;
+import com.example.amateurcooking.Recipes.Recipe4;
 
 public class level1 extends AppCompatActivity implements OnClickListener {
     //declare the cards
@@ -50,27 +53,20 @@ public class level1 extends AppCompatActivity implements OnClickListener {
             case R.id.bruschetta: i = new Intent (this, Recipe1.class); startActivity(i);
                 break;
 
-            case R.id.card2: i = new Intent (this, level2.class); startActivity(i);
+            case R.id.chickensalad: i = new Intent (this, Recipe2.class); startActivity(i);
                 break;
 
-            case R.id.card3: i = new Intent (this, level3.class); startActivity(i);
+            case R.id.omelette: i = new Intent (this, Recipe3.class); startActivity(i);
                 break;
 
-            case R.id.card4: i = new Intent (this, level4.class); startActivity(i);
+            case R.id.garlicpotatoes: i = new Intent (this, Recipe4.class); startActivity(i);
                 break;
 
-            case R.id.card5: i = new Intent (this, level5.class); startActivity(i);
+            case R.id.backbtn: i = new Intent (this, Dashboard.class); startActivity(i);
                 break;
 
-            case R.id.card6: i = new Intent (this, Notes.class); startActivity(i);
+            case R.id.quizButton: i = new Intent (this, Quiz1.class); startActivity(i);
                 break;
-
-            case R.id.achievements: i = new Intent (this, Achievements.class); startActivity(i);
-                break;
-
-            case R.id.progress: i = new Intent (this, ProgressPage.class); startActivity(i);
-                break;
-
 
             //default case break
             default: break;
@@ -97,44 +93,6 @@ public class level1 extends AppCompatActivity implements OnClickListener {
 
 
 
-
-
-
-
-
-
-
-
-//        //setting views references for each card view object
-//        quizButton = findViewById(R.id.quizButton);
-//        backbtn = findViewById(R.id.backbtn);
-//        Stat1 = findViewById(R.id.bruschetta);
-//
-//        //adding onClickListeners
-//        quizButton.setOnClickListener(this);
-//        Stat1.setOnClickListener(this);
-//
-//        backbtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(level1.this, Dashboard.class);
-//                level1.this.startActivity ( intent );
-//
-//            }
-//
-//
-//        });
-//
-//
-//        }
-//
-//
-//    @Override
-//    public void onClick(View v) {
-//        Intent intent = new Intent(this, QuizModel1.class);
-//        this.startActivity ( intent );
-//
-//    }
 
 
 

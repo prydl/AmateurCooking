@@ -1,6 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/leftarrow" />
+
+            <ImageView
+                android:id="@+id/recipephoto"
+                android:layout_width="386dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/chickensalad" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                app:srcCompat="@drawable/time" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="197dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="59dp"
+                android:layout_marginRight="59dp"
+                app:srcCompat="@drawable/serves" />
+
+            <TextView
+                android:id="@+id/serves"
+                android:layout_width="197dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/recipe"
+                android:layout_width="388dp"
+                android:layout_height="315dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="1dp"
+                android:text="Recipe here..." />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

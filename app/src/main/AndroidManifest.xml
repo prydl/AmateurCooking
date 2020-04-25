@@ -16,6 +16,26 @@
         <activity android:name=".Notes"></activity>
         <activity android:name=".QuizModel2" />
         <activity android:name=".Recipes.Recipe1" />
+        <activity android:name=".Recipes.Recipe2" />
+        <activity android:name=".Recipes.Recipe3" />
+        <activity android:name=".Recipes.Recipe4" />
+        <activity android:name=".Recipes.Recipe5" />
+        <activity android:name=".Recipes.Recipe6" />
+        <activity android:name=".Recipes.Recipe7" />
+        <activity android:name=".Recipes.Recipe8" />
+        <activity android:name=".Recipes.Recipe9" />
+        <activity android:name=".Recipes.Recipe10" />
+        <activity android:name=".Recipes.Recipe11" />
+        <activity android:name=".Recipes.Recipe12" />
+        <activity android:name=".Recipes.Recipe13" />
+        <activity android:name=".Recipes.Recipe14" />
+        <activity android:name=".Recipes.Recipe15" />
+        <activity android:name=".Recipes.Recipe16" />
+        <activity android:name=".Recipes.Recipe17" />
+        <activity android:name=".Recipes.Recipe18" />
+        <activity android:name=".Recipes.Recipe19" />
+        <activity android:name=".Recipes.Recipe20" />
+
         <activity android:name=".QuizModel4" />
         <activity android:name=".QuizModel5" />
         <activity android:name=".Achievements" />

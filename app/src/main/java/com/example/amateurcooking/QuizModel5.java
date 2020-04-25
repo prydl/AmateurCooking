@@ -146,7 +146,7 @@ public class QuizModel5 extends AppCompatActivity implements View.OnClickListene
     }
 
     private void gameOver () {
-        Intent intent = new Intent(this, level1.class);
+        Intent intent = new Intent(this, level5.class);
         this.startActivity ( intent );
 //        AlertDialog.Builder alertDialogueBuilder = new AlertDialog.Builder(QuizModel.this);
 //        alertDialogueBuilder

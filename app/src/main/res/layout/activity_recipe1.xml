@@ -24,7 +24,7 @@
                 android:background="@drawable/leftarrow" />
 
             <ImageView
-                android:id="@+id/newsPhoto"
+                android:id="@+id/recipephoto"
                 android:layout_width="386dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="16dp"
