@@ -2,11 +2,16 @@ package com.example.amateurcooking;
 
 import androidx.appcompat.app.AppCompatActivity;
 //add imports
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class QuizModel1 extends AppCompatActivity implements View.OnClickListener {
@@ -15,6 +20,7 @@ public class QuizModel1 extends AppCompatActivity implements View.OnClickListene
     private TextView question, score;
     private Button option1, option2, option3, option4;
     private Button quitButton;
+
 
 
     //calling questions
@@ -147,30 +153,24 @@ public class QuizModel1 extends AppCompatActivity implements View.OnClickListene
     }
 
     private void gameOver () {
+
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.custom_toast,
+                (ViewGroup) findViewById(R.id.custom_toast_container));
+
+        TextView text = (TextView) layout.findViewById(R.id.text);
+        text.setText("Incorrect, game over!");
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+
+        toast.show();
+
         Intent intent = new Intent(this, level1.class);
         this.startActivity ( intent );
-//        AlertDialog.Builder alertDialogueBuilder = new AlertDialog.Builder(QuizModel.this);
-//        alertDialogueBuilder
-//            .setMessage("Game Over! Your Score is " + mScore + " points.")
-//            .setCancelable(false)
-//            .setPositiveButton("NEW GAME",
-//                    new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int i) {
-//
-//                            startActivity(new Intent(getApplicationContext(), QuizModel.class));
-//
-//                        }
-//                    })
-//            .setNegativeButton("EXIT",
-//                    new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int i) {
-//
-//                            finish();
-//
-//                        }
-//                    });
+
     }
 
 
