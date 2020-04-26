@@ -1,7 +1,12 @@
+// Quiz 1
+// Stores bank of questions, choices and answers for quiz 1
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
-//TO-DO: fill all questions for Quiz 1
-public class Quiz1  {
+public class Quiz1 {
 
     public String mQuestions[] = {
             "Which of these is not an ingredient of the cheese omelette? ",

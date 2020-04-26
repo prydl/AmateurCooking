@@ -1,6 +1,11 @@
+// Quiz 4
+// Stores bank of questions, choices and answers for quiz 4
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
-//TO-DO: fill all questions for Quiz 4
 public class Quiz4 {
 
     public String mQuestions[] = {

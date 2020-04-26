@@ -1,3 +1,9 @@
+// Level 2
+// Displays overview of recipes for level 2
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
 import android.content.Intent;
@@ -16,11 +22,13 @@ import com.example.amateurcooking.Recipes.Recipe8;
 
 public class level2 extends AppCompatActivity implements View.OnClickListener {
 
-    //declare the cards
+    // initialise variables for layout elements
     private Button quizButton;
     private ImageButton backbtn;
     private CardView fishtacos, overnightoats, chocchipcookies, vegetablesoup;
 
+
+    // set content view and add onclick listeners
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,11 +52,11 @@ public class level2 extends AppCompatActivity implements View.OnClickListener {
 
     }
 
+    // navigate each card to its own page on click
     @Override
     public void onClick(View v) {
         Intent i;
 
-        //switch statements to navigate each card to its own page
         switch (v.getId()) {
             case R.id.fishtacos: i = new Intent (this, Recipe5.class); startActivity(i);
                 break;
@@ -68,15 +76,10 @@ public class level2 extends AppCompatActivity implements View.OnClickListener {
             case R.id.quizButton: i = new Intent (this, QuizModel2.class); startActivity(i);
                 break;
 
-            //default case break
+            // default case break
             default: break;
 
-
         }
-
-
-
-
     }
 
 }

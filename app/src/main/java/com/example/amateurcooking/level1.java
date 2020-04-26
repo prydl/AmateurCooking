@@ -1,3 +1,9 @@
+// Level 1
+// Displays overview of recipes for level 1
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
 import android.content.Intent;
@@ -16,17 +22,19 @@ import com.example.amateurcooking.Recipes.Recipe4;
 
 public class level1 extends AppCompatActivity implements View.OnClickListener {
 
-    //declare the cards
+    // initialise variables for layout elements
     private Button quizButton;
     private ImageButton backbtn;
     private CardView Bruschetta,ChickenSalad, Omelette, GarlicPotatoes;
 
+
+    // set content view and add onclick listeners
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level1);
 
-        //setting views references for each card view object
+        // setting views references for each card view object
         Bruschetta = findViewById(R.id.bruschetta);
         ChickenSalad = findViewById(R.id.chickensalad);
         Omelette = findViewById(R.id.omelette);
@@ -34,7 +42,7 @@ public class level1 extends AppCompatActivity implements View.OnClickListener {
         backbtn = findViewById(R.id.backbtn);
         quizButton = findViewById(R.id.quizButton);
 
-        //adding onClickListeners
+        // adding onClickListeners
         Bruschetta.setOnClickListener(this);
         ChickenSalad.setOnClickListener(this);
         Omelette.setOnClickListener(this);
@@ -44,11 +52,12 @@ public class level1 extends AppCompatActivity implements View.OnClickListener {
 
     }
 
+
+    // navigate each card to its own page on click
     @Override
     public void onClick(View v) {
         Intent i;
 
-        //switch statements to navigate each card to its own page
         switch (v.getId()) {
             case R.id.bruschetta: i = new Intent (this, Recipe1.class); startActivity(i);
                 break;
@@ -68,15 +77,10 @@ public class level1 extends AppCompatActivity implements View.OnClickListener {
             case R.id.quizButton: i = new Intent (this, QuizModel1.class); startActivity(i);
                 break;
 
-            //default case break
+            // default case break
             default: break;
 
-
         }
-
-
-
-
     }
 
 }

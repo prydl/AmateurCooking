@@ -1,3 +1,9 @@
+// Quiz Complete
+// Shows generic quiz completion screen
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
 import android.content.Intent;
@@ -17,11 +23,14 @@ import nl.dionsegijn.konfetti.models.Shape.Square;
 public class QuizComplete extends AppCompatActivity implements View.OnClickListener {
 
 
-    //initialise variables
+    // initialise variables
     private Button doneButton;
     private KonfettiView viewKonfetti;
 
 
+    // display quiz completion text and animated confetti
+    // Konfetti module adapted from Daniel Martinus
+    // https://github.com/DanielMartinus/Konfetti
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +55,8 @@ public class QuizComplete extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    //set page to Dashboard once quiz is completed
+
+    // set page to Dashboard once quiz is completed
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, Dashboard.class);

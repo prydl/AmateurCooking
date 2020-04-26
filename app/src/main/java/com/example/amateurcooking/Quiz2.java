@@ -1,7 +1,12 @@
+// Quiz 2
+// Stores bank of questions, choices and answers for quiz 2
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
-//TO-DO: fill all questions for Quiz 1
-public class Quiz2  {
+public class Quiz2 {
 
     public String mQuestions[] = {
             "What else needs to be added to the salsa besides, tomatoes, onion and chilli for the fish tacos?",

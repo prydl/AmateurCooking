@@ -1,3 +1,9 @@
+// Main Activity
+// Facilitates app splash screen and user login
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,17 +18,17 @@ import android.view.View.OnClickListener;
 import android.os.Bundle;
 import android.widget.TextView;
 
-
-
 public class MainActivity extends AppCompatActivity {
 
-    //initialise fields
+    // initialise attributes
     private EditText emailfield;
     private EditText passwordfield;
     private Button signinbutton;
     private TextView test;
     private int counter = 3;
 
+
+    // set content view and onclick listener for sign in button
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    // writing a method to validate username and password
+    // validate username and password
+    // currently only validates with username "johnsmith@gmail.com" and password "password123"
     @SuppressLint("SetTextI18n")
     private void Validate(String userEmail, String userPassword) {
         if ((userEmail.equals("johnsmith@gmail.com") && (userPassword.equals("password123")))){

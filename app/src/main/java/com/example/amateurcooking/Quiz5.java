@@ -1,6 +1,11 @@
+// Quiz 5
+// Stores bank of questions, choices and answers for quiz 5
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
-//TO-DO: fill all questions for Quiz 5
 public class Quiz5 {
 
     public String mQuestions[] = {
