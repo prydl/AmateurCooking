@@ -1,3 +1,9 @@
+// Recipe 1
+// Displays the content for recipe
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking.Recipes;
 
 //imports
@@ -12,8 +18,9 @@ import com.example.amateurcooking.R;
 import com.example.amateurcooking.level1;
 
 public class Recipe1 extends AppCompatActivity implements View.OnClickListener {
-    private ImageButton backbtn;
 
+    // initialise variables
+    private ImageButton backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,23 +29,13 @@ public class Recipe1 extends AppCompatActivity implements View.OnClickListener {
 
         backbtn = findViewById(R.id.backbtn);
         backbtn.setOnClickListener(this);
-
-
     }
 
 
+    // return to current level
     public void onClick(View v) {
         Intent intent = new Intent(this, level1.class);
         this.startActivity ( intent );
-
-
-
-
     }
-
-
-
-
-
 
 }
