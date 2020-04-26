@@ -165,7 +165,7 @@ public class QuizModel4 extends AppCompatActivity implements View.OnClickListene
 
         toast.show();
 
-        Intent intent = new Intent(this, level1.class);
+        Intent intent = new Intent(this, level4.class);
         this.startActivity ( intent );
 
     }
