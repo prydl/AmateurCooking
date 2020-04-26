@@ -1,3 +1,9 @@
+// Quiz Model 1
+// Facilitates quiz model for Level 1
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,20 +22,22 @@ import android.widget.Toast;
 
 public class QuizModel1 extends AppCompatActivity implements View.OnClickListener {
 
-    //initialise variables
+    // initialise variables
     private TextView question, score;
     private Button option1, option2, option3, option4;
     private Button quitButton;
-
-
-
-    //calling questions
-    private Quiz1 mQuestions = new Quiz1();
-    private String mAnswer;
     private int mScore = 0;
     private int counter = 0;
+
+
+    // get questions and answers from quiz bank
+    private Quiz1 mQuestions = new Quiz1();
+    private String mAnswer;
     private int mQuestionsLength = mQuestions.mQuestions.length;
 
+
+    // quiz model
+    // set text for questions and buttons for each option
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -137,6 +145,8 @@ public class QuizModel1 extends AppCompatActivity implements View.OnClickListene
 
     }
 
+
+    // update quiz with next question
     private void updateQuestion (int num) {
         question.setText(mQuestions.getQuestion(num));
         option1.setText(mQuestions.getChoice1(num));
@@ -147,13 +157,20 @@ public class QuizModel1 extends AppCompatActivity implements View.OnClickListene
         mAnswer = mQuestions.getAnswer(num);
     }
 
+
+    // all answers correct, launch quiz completion view
     private void completeQuiz () {
         Intent intent = new Intent(this, QuizComplete.class);
         this.startActivity(intent);
     }
 
+
+    // incorrect answer, game over
+    // show toast and return to current level
     private void gameOver () {
 
+        // toast implementation adapted from Android Developers
+        // https://developer.android.com/guide/topics/ui/notifiers/toasts
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.custom_toast,
                 (ViewGroup) findViewById(R.id.custom_toast_container));
@@ -168,17 +185,19 @@ public class QuizModel1 extends AppCompatActivity implements View.OnClickListene
 
         toast.show();
 
+        // send back to current level
         Intent intent = new Intent(this, level1.class);
         this.startActivity ( intent );
 
     }
 
 
+    // onclick for quit button
+    // sends back to current level
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, level1.class);
         this.startActivity ( intent );
-
     }
 
 

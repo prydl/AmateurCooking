@@ -1,3 +1,9 @@
+// Quiz Model 5
+// Facilitates quiz model for Level 5
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,19 +20,22 @@ import android.widget.Toast;
 
 public class QuizModel5 extends AppCompatActivity implements View.OnClickListener  {
 
-    //initialise variables
+    // initialise variables
     private TextView question, score;
     private Button option1, option2, option3, option4;
     private Button quitButton;
 
 
-    //calling questions
+    // get questions and answers from quiz bank
     private Quiz5 mQuestions = new Quiz5();
     private String mAnswer;
     private int mScore = 0;
     private int counter = 0;
     private int mQuestionsLength = mQuestions.mQuestions.length;
 
+
+    // quiz model
+    // set text for questions and buttons for each option
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -134,6 +143,7 @@ public class QuizModel5 extends AppCompatActivity implements View.OnClickListene
 
     }
 
+    // update quiz with next question
     private void updateQuestion (int num) {
         question.setText(mQuestions.getQuestion(num));
         option1.setText(mQuestions.getChoice1(num));
@@ -144,11 +154,16 @@ public class QuizModel5 extends AppCompatActivity implements View.OnClickListene
         mAnswer = mQuestions.getAnswer(num);
     }
 
+
+    // all answers correct, launch quiz completion view
     private void completeQuiz () {
         Intent intent = new Intent(this, QuizComplete.class);
         this.startActivity(intent);
     }
 
+
+    // incorrect answer, game over
+    // show toast and return to current level
     private void gameOver () {
 
         LayoutInflater inflater = getLayoutInflater();
@@ -171,15 +186,14 @@ public class QuizModel5 extends AppCompatActivity implements View.OnClickListene
     }
 
 
+    // onclick for quit button
+    // sends back to current level
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, level5.class);
         this.startActivity ( intent );
 
     }
-
-
-
 
 }
 
