@@ -1,3 +1,14 @@
+// Dashboard
+// Displays the dashboard (main app view)
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+// Dashboard elements (CardView) adapted from Android Developers
+// https://developer.android.com/reference/android/support/v7/widget/CardView#summary
+// Tutorial by Aws Rh on Youtube
+// https://www.youtube.com/watch?v=d6CfaWW7G5Q&fbclid=IwAR3NunuXviohz-3G2MXht_MxAxhruwccKPAWF7PHETrAw64k-1cBCAsmW5s
+
+
 package com.example.amateurcooking;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,14 +21,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-//https://www.youtube.com/watch?v=d6CfaWW7G5Q&fbclid=IwAR3NunuXviohz-3G2MXht_MxAxhruwccKPAWF7PHETrAw64k-1cBCAsmW5s
-//https://developer.android.com/reference/android/support/v7/widget/CardView#summary
+
 
 public class Dashboard extends AppCompatActivity implements View.OnClickListener {
-    //declare the cards
+
+    // initialise variables for layout elements
     private CardView Level1, Level2, Level3, Level4, Level5, Notes;
     private ImageView achievement,progress, chuckapi;
-
 
 
     @Override
@@ -25,7 +35,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        //setting views references for each card view object
+        // setting views references for each card view object
         Level1 = findViewById(R.id.card1);
         Level2 = findViewById(R.id.card2);
         Level3 = findViewById(R.id.card3);
@@ -36,7 +46,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         progress = findViewById(R.id.progress);
         chuckapi = findViewById(R.id.chuckapi);
 
-        //adding onClickListeners
+        // adding onClickListeners
         Level1.setOnClickListener(this);
         Level2.setOnClickListener(this);
         Level3.setOnClickListener(this);
@@ -49,11 +59,12 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
     }
 
+
+    // navigate each card to its own page on click
     @Override
     public void onClick(View v) {
         Intent i;
 
-        //switch statements to navigate each card to its own page
         switch (v.getId()) {
             case R.id.card1: i = new Intent (this, level1.class); startActivity(i);
             break;
@@ -82,15 +93,10 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             case R.id.chuckapi: i = new Intent (this, ChuckNorrisFood.class); startActivity(i);
                 break;
 
-
-            //default case break
+            // default case break
             default: break;
 
-
         }
-
-
-
-
     }
+
 }

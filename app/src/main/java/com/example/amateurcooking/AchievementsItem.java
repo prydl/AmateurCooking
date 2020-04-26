@@ -1,3 +1,13 @@
+// Achievements Item
+// Assigns attributes of the achievement items
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+// Adapted using Jetpack RecyclerView from Android Developers
+// https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=en
+
+
+
 package com.example.amateurcooking;
 
 public class AchievementsItem {
