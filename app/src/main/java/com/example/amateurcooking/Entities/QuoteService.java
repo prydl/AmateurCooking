@@ -1,20 +1,21 @@
+// QuoteService
+// Obtains quotes from the Chuck Norris API
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking.Entities;
 
-//add import statements for retrofit
-import java.util.List;
+// import retrofit modules
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-//week 8 tutorial: here we define the endpoints
+
 public interface QuoteService {
 
-    //use @GET to retrieve data
-    //define which category
+    // use @GET to retrieve data
+    // must define category to select from CN API
     @GET("/jokes/random?category=food")
     Call<QuoteResponse> getQuotes();
-
-
-
-
 
 }

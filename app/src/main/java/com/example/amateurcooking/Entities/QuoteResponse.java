@@ -1,12 +1,18 @@
+// QuoteResponse
+// Processes responses from the Chuck Norris API using GSON
+// INFS3634 2020 T1 - Group 13
+// 26-04-2020
+
+
 package com.example.amateurcooking.Entities;
 
-//add imports
+// import annotation modules from GSON
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
-public class QuoteResponse {
 
+public class QuoteResponse {
 
     @SerializedName("categories")
     @Expose
